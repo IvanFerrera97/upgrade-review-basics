@@ -29,14 +29,16 @@ const users = [
     },
 ]
 
-let volumentTotal = 0;
-let contador = 0;
+let sum = 0
+let counter = 0 
 
-for  (let i  of users) {
+
+for (let i of users){
     for (let j in i.favoritesSounds){
-        for (let fav of favs) {
-            volumentTotal += fav.volume;
-            contador ++;
-        }
+        //console.log(i.favoritesSounds[j].volume)
+        sum += i.favoritesSounds[j].volume
+        counter++
     }
 }
+
+console.log(sum / counter)
