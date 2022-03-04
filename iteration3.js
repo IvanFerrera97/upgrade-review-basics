@@ -28,3 +28,17 @@ const users = [
         }
     },
 ]
+
+let counter = 0
+
+for (let i of users){
+    for (let j in i.favoritesSounds){
+        j.forEach()
+        //console.log(j); 
+    }
+}
+//frutas.forEach(function(elemento, indice, array) {
+    //console.log(elemento, indice);
+// })
+// Manzana 0
+// Banana 1
